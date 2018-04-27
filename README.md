@@ -24,7 +24,7 @@ The mapper.py file simply outputs (year, temp, "NA") for TMIN value and (year, "
 
 ### Question 3 : 5 hottest , 5 coldest weather stations for each year excluding abnormalities or missing data 
 
-The mapper and reducer for this query is in AveragePerYear Folder
+The mapper and reducer for this query is in TopWeatherStations Folder
 
 The mapper.py file simply outputs (year, weatherStation, tmin, tmax) for every entry in dataset. The reducer.py file puts the output of the map function into a list and sorts it. It then calculates the average of the TMIN and TMAX for a particular station. It the sorts the TMIN and TMAX in two lists and outputs the 5 Hottest and 5 Coldest Stations for every year.
 
@@ -32,7 +32,7 @@ The mapper.py file simply outputs (year, weatherStation, tmin, tmax) for every e
 
 ### Question 4 :  Hottest and coldest day and corresponding weather stations in the entire dataset 
 
-The mapper and reducer for this query is in AveragePerYear Folder
+The mapper and reducer for this query is in ColdestHottest Folder
 
 The mapper.py file simply outputs (year, date, weatherstation, tmin ,tmax) for every entry in dataset. The reducer.py file checks the Tmin and Tmax value of every output of a map function and updates the current Tmin and TMax value. A global counter is maintained and when all the input files have been processed, the weather station with lowest and highest temperature is along with the date on which the lowest or highest temperature was recorded is given as the output
 
